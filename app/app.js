@@ -6,9 +6,6 @@
  */
 
 // Needed for redux-saga es6 generator support
-import 'babel-polyfill'
-import '../app/App.scss';
-
 // Import all the third party stuff
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -38,6 +35,8 @@ import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */
 
+import 'babel-polyfill';
+import '../app/App.scss';
 import configureStore from './configureStore';
 
 // Import i18n messages

@@ -13,15 +13,17 @@
 
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import HomePage from '../../containers/HomePage';
-import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import SimpleDND from '../../containers/SimpleDND';
 
 export default function App() {
   return (
     <div>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/simple_dnd" component={SimpleDND} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/containers/SimpleDND/components/Container.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">app/containers/SimpleDND/components</a> Container.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">34.29% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>12/35</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">11.11% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">34.29% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>12/35</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { DragSource, DropTarget } from 'react-dnd';
+import { findDOMNode } from 'react-dom';
+import { Col } from 'react-bootstrap';
+import Card from './Card';
+const ItemTypes = { DESK: 'DESK', CARD: 'card' };
+&nbsp;
+&nbsp;
+const deskSource = {
+  beginDrag(props) {
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      id: props.id,
+      index: props.index,
+      ItemTypes: 'DESK',
+    };
+  },
+};
+const deskTarget = {
+  drop(props, monitor, component) {
+    let dragIndex = <span class="cstat-no" title="statement not covered" >monitor.getItem().index;</span>
+<span class="cstat-no" title="statement not covered" >    if (monitor.getItem().ItemTypes !== 'card') {</span>
+      const hoverIndex = <span class="cstat-no" title="statement not covered" >props.index;</span>
+<span class="cstat-no" title="statement not covered" >      if (dragIndex === hoverIndex) {</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }
+      const hoverBoundingRect = <span class="cstat-no" title="statement not covered" >findDOMNode(component).getBoundingClientRect();</span> // eslint-disable-line react/no-find-dom-node
+&nbsp;
+      const hoverMiddleX = <span class="cstat-no" title="statement not covered" >(hoverBoundingRect.right - hoverBoundingRect.left) / 2;</span>
+&nbsp;
+      const clientOffset = <span class="cstat-no" title="statement not covered" >monitor.getClientOffset();</span>
+&nbsp;
+      const hoverClientX = <span class="cstat-no" title="statement not covered" >clientOffset.X - hoverBoundingRect.left;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      if (dragIndex &lt; hoverIndex &amp;&amp; hoverClientX &lt; hoverMiddleX) {</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      if (dragIndex &gt; hoverIndex &amp;&amp; hoverClientX &gt; hoverMiddleX) {</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      props.moveBorders(dragIndex, hoverIndex);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      monitor.getItem().index = hoverIndex; </span>// eslint-disable-line no-param-reassign
+    } else {
+<span class="cstat-no" title="statement not covered" >      if (monitor.getItem().deskIndex === props.index) {</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+      }
+      const deskIndexPutt = <span class="cstat-no" title="statement not covered" >monitor.getItem().deskIndex;</span>
+      const deskIndexPull = <span class="cstat-no" title="statement not covered" >props.index;</span>
+<span class="cstat-no" title="statement not covered" >      dragIndex = monitor.getItem().index;</span>
+<span class="cstat-no" title="statement not covered" >      props.moveCardsOutSideDesk(deskIndexPull, deskIndexPutt, dragIndex);</span>
+    }
+  },
+};
+&nbsp;
+&nbsp;
+@DropTarget([ItemTypes.DESK, ItemTypes.CARD], deskTarget, (connect, monitor) =&gt; ({
+  connectDropTarget: connect.dropTarget(),
+  isOver: monitor.isOver(),
+  canDrop: monitor.canDrop(),
+&nbsp;
+&nbsp;
+}))
+@DragSource(ItemTypes.DESK, deskSource, (connect, monitor) =&gt; ({
+  connectDragSource: connect.dragSource(),
+  isDragging: monitor.isDragging(),
+  connectDragPreview: connect.dragPreview(),
+}))
+export default class Container extends Component {
+&nbsp;
+  static propTypes = {
+    desk: PropTypes.any.isRequired,
+    deskIndex: PropTypes.any.isRequired,
+    connectDragSource: PropTypes.func.isRequired,
+    moveCardsInsideDesk: PropTypes.func.isRequired,
+    moveCardsOutSideDesk: PropTypes.func.isRequired, // eslint-disable-line react/no-unused-prop-types
+    connectDropTarget: PropTypes.func.isRequired,
+    canDrop: PropTypes.any.isRequired,
+    isOver: PropTypes.any.isRequired,
+    addCardBtn: PropTypes.func.isRequired,
+    openModal: PropTypes.func.isRequired,
+    checkBntClick: PropTypes.func.isRequired,
+  }
+  render() {
+    const {
+      desk,
+      deskIndex,
+      connectDragSource,
+      connectDropTarget,
+      moveCardsInsideDesk,
+      canDrop,
+      isOver,
+      addCardBtn,
+      openModal,
+      checkBntClick,
+      } = this.props;
+&nbsp;
+    const isActive = canDrop &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >isOver;</span>
+    let backgroundColor = '';
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (isActive) {
+<span class="cstat-no" title="statement not covered" >      backgroundColor = 'darkgreen';</span>
+    }
+&nbsp;
+    return (
+      &lt;Col xs={4} md={4}&gt;
+        { connectDragSource(connectDropTarget(
+          &lt;div className="single_desc"&gt;
+            &lt;button onClick={() =&gt; { addCardBtn(deskIndex); }} className="w3-button w3-xlarge w3-circle w3-green"&gt;+&lt;/button&gt;
+            &lt;div className="singe_desc_block" style={{ backgroundColor }}&gt;
+              { desk.map((item, index) =&gt; (
+                &lt;Card
+                  key={item.get('id')}
+                  moveCardsInsideDesk={moveCardsInsideDesk}
+                  index={index}
+                  openModal={openModal}
+                  deskIndex={deskIndex}
+                  id={item.get('id')}
+                  text={item.get('text')}
+                  checkBntClick={checkBntClick}
+                /&gt;
+              ))}
+            &lt;/div&gt;
+          &lt;/div&gt;
+        ))}
+      &lt;/Col&gt;
+    );
+  }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Mar 28 2018 11:52:23 GMT+0300 (EEST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

@@ -1,1 +1,1 @@
-Пустой шаблон react-boilerpalte  с Sass
+Пустой шаблон react-boilerpalte  с Sass esLint
